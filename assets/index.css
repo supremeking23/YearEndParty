@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #5e0211;
+}
+.snow1{
+    background: url('https://www.pikpng.com/pngl/b/242-2425068_snow-snowflake-snowflakes-snowday-snowfall-snowfalls-monochrome-clipart.png');
+    background-size: initial;
+    background-repeat: repeat;
+    width: 100%;
+    height: 148vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: snowfall 10s infinite linear;
+    opacity: 0.2;
+}
+@keyframes snowfall{
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: 100px 650px;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 110px;
+    border-bottom: 1px solid #ffffff15;
+}
+header .logo img{
+    width: 190px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 24px;
+}
+.banner{
+    text-align: center;
+    padding-top: 65px;
+    color: #fff;
+}
+.banner_text{
+    max-width: 550px;
+    margin: 0 auto;
+}
+.banner_text p{
+    margin: 10px 0 0 0;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner h1{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Mountains of Christmas', cursive;
+}
+.christmas{
+    position: relative;
+}
+.christmas_img{
+    margin: 315px 0 0 -25px;
+}
+.circle{
+    width: 756px;
+    height: 756px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: circle 60s linear 0s infinite;
+}
+@keyframes circle {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.circle .icon{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 28px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #02075e;
+    transition: all ease 0.5s;
+}
+.icon img{
+    margin: -26px 0 0 -19px;
+    width: 79px;
+}
+.icon:hover{
+    border-color: #ff0000;
+    background-color: #ff0000;
+    box-shadow: 0 4px 94px #8c0000;
+}
+.icon:nth-child(1){
+    top: -40px;
+    left: 41%;
+}
+.icon:nth-child(1) img{
+    margin: -29px 0 0 -22px;
+    width: 85px;
+}
+.icon:nth-child(2){
+    top: 70px;
+    right: 50px;
+}
+.icon:nth-child(3){
+    top: 330px;
+    right: -50px;
+}
+.icon:nth-child(3) img{
+    width: 76px;
+}
+.icon:nth-child(4){
+    bottom: 60px;
+    right: 60px;
+}
+.icon:nth-child(4) img{
+    width: 88px;
+}
+.icon:nth-child(5){
+    bottom: -40px;
+    right: 41%;
+}
+.icon:nth-child(5) img{
+    margin: -29px 0 0 -22px;
+    width: 85px;
+}
+.icon:nth-child(6){
+    bottom: 70px;
+    left: 45px;
+}
+.icon:nth-child(7){
+    bottom: 575px;
+    left: 45px;
+}
+.icon:nth-child(7) img{
+    width: 76px;
+}
+.icon:nth-child(8){
+    bottom: 328px;
+    left: -55px;
+}
+.icon:nth-child(8) img{
+    width: 88px;
+}
+.snow_flakes{
+    position: absolute;
+    width: 100px;
+    color: snow;
+    font-size: 60px;
+    top: 100px;
+    left: 100px;
+    border-radius: 50px;
+    animation: snow 7s ease 0s infinite;
+}
+@keyframes snow{
+    from{
+        transform: translateY(-500%);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(500%);
+        opacity: .3;
+    }
+}
+.snow_flakes:nth-child(2){
+    top: 300px;
+    left: 400px;
+    animation-duration: 6s;
+}
+.snow_flakes:nth-child(3){
+    top: 500px;
+    left: 200px;
+    animation-duration: 3s;
+}
+.snow_flakes:nth-child(4){
+    top: 100px;
+    right: 100px;
+    left: inherit;
+    animation-duration: 4s;
+}
+.snow_flakes:nth-child(5){
+    top: 300px;
+    right: 400px;
+    left: inherit;
+    animation-duration: 7s;
+}
+.snow_flakes:nth-child(6){
+    top: 500px;
+    right: 200px;
+    left: inherit;
+}
+.snow_flakes:nth-child(7){
+    top: 0;
+    left: 45%;
+}
+.snow_flakes:nth-child(even){
+    color: #ff5e00;
+    box-shadow: 0 4px 94px #610101;
+}
