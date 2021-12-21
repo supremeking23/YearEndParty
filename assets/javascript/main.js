@@ -19,21 +19,36 @@ $(document).ready(function(){
             .on("click", ".open_greetings_modal_ivan", function(){
                 $("#greetings_modal_ivan").modal("show");
             })
+            .on("click", "#pause_btn", function(){
+                let pause_btn = $(this);
+
+                if(pause_btn.attr("data-is_playing") == 1){
+                    pause_btn.text("Play");
+                    video_greetings.pause();
+                    pause_btn.attr("data-is_playing", 0);
+                }else{
+                    pause_btn.text("Pause");
+                    video_greetings.play();
+                    pause_btn.attr("data-is_playing", 1);
+                }
+                
+            })
 
             .on("hidden.bs.modal", "#greetings_modal" , closeGreetingModal)
             .on("click", "#play_again_btn", playAgainVideoGreetings)
+            .on("click", "#play_automatic", autoPlayBackgroundMusic)
 
-    autoPlayBackgroundMusic(); // patanggal nalang para mag auto play
 
 
     video_greetings.onended = endGreetingAction
     loadData();
+
+    $("#play_automatic").trigger("click");
 });
 
 
 function autoPlayBackgroundMusic(){
-    
-    background_music.play();
+    // background_music.play();
 }
 
 
@@ -95,10 +110,12 @@ function openGreetingModal(){
 
 function closeGreetingModal(){
     video_greetings.pause();
-    background_music.play();
+    // background_music.play();
     video_greetings.currentTime = 0;
     $("#qrcode").html("");
     qrcode.clear();
+
+    $("#pause_btn").attr("data-is_playing", 1).text("Pause");
 }
 
 function playAgainVideoGreetings(){

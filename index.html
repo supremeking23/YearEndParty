@@ -74,32 +74,13 @@
                 <div id="qrcode"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" style="color: #fff;" id="pause_btn" data-is_playing="1">Pause</button>
                 <button type="button" class="btn btn-primary" disabled id="play_again_btn">Play Again</button>
             </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="greetings_modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal Harold</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <video src="https://ik.imagekit.io/1cqtok8fv7n/Jingle_Bell_Rock_LoFi_Remix_wgiNcMF3j.mp4?updatedAt=1639994480675" title="PIQ video" class="video_greetings" style="opacity: 0; width: 10px;"></video> 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-            </div>
-        </div>
-    </div>
-    <video src="https://ik.imagekit.io/1cqtok8fv7n/Jingle_Bell_Rock_LoFi_Remix_wgiNcMF3j.mp4?updatedAt=1639994480675" title="PIQ video" id="background_music" style="opacity: 0; width: 10px;"></video>
-
+    <video src="https://ik.imagekit.io/1cqtok8fv7n/Jingle_Bell_Rock_LoFi_Remix_wgiNcMF3j.mp4?updatedAt=1639994480675" title="background music" id="background_music" style="opacity: 0; width: 10px;"></video>
+    <button type="button" style="opacity:0" id="play_automatic">play automatic</button>
 </body>
 </html>
