@@ -186,5 +186,7 @@ header {
   to {
     transform: translateY(500%);
     opacity: .3; } }
+video {
+  width: 100%; }
 
 /*# sourceMappingURL=index.css.map */
