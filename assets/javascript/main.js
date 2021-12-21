@@ -19,10 +19,12 @@ $(document).ready(function(){
             .on("click", ".open_greetings_modal_ivan", function(){
                 $("#greetings_modal_ivan").modal("show");
             })
+
             .on("hidden.bs.modal", "#greetings_modal" , closeGreetingModal)
             .on("click", "#play_again_btn", playAgainVideoGreetings)
 
     autoPlayBackgroundMusic(); // patanggal nalang para mag auto play
+
 
     video_greetings.onended = endGreetingAction
     loadData();
