@@ -67,7 +67,7 @@ function loadData(){
                                 <img src="assets/images/${employee.nickname}.png" alt="${employee.name}">
                             </div>`;
     }
-    $(".circle").html(employee_icon).append(employee_icon);
+    $(".circle").html(employee_icon);
 }
 
 

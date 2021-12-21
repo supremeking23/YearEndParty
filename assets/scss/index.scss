@@ -37,7 +37,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 110px;
   border-bottom: 1px solid #ffffff15;
@@ -62,13 +62,19 @@ header {
 
 .banner {
   text-align: center;
-  padding-top: 65px;
+  padding-top: 20px;
   color: #fff;
 }
 
 .banner_text {
   max-width: 550px;
-  margin: 0 auto;
+  margin: 0 auto 0;
+  z-index: 999;
+  position: relative;
+  top: 34vh;
+  background: #0000007d;
+  border-radius: 10px;
+  padding: 10px 10px 20px;
 
   p {
     margin: 10px 0 0 0;
@@ -87,10 +93,6 @@ header {
   position: relative;
 }
 
-.christmas_img {
-  margin: 315px 0 0 -25px;
-}
-
 .circle {
   width: 756px;
   height: 756px;
@@ -98,7 +100,7 @@ header {
   border-radius: 50%;
   border: 1px solid #fff;
   position: absolute;
-  top: -100px;
+  top: -120px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -130,8 +132,8 @@ header {
       }
     
       &:nth-child(1){
-        top: -40px;
-        left: 41%;
+        top: 68px;
+        left: 44px;
     
         img {
           margin: -29px 0 0 -22px;
@@ -140,13 +142,13 @@ header {
       }
     
       &:nth-child(2) {
-        top: 70px;
-        right: 50px;
+        top: 7px;
+        right: 125px;
       }
     
       &:nth-child(3) {
-        top: 330px;
-        right: -50px;
+        top: 407px;
+        right: -34px;
     
         img {
           width: 76px;
@@ -154,8 +156,8 @@ header {
       }
     
       &:nth-child(4) {
-        bottom: 60px;
-        right: 60px;
+        bottom: -42px;
+        right: 271px;
     
         img {
           width: 88px;
@@ -163,32 +165,8 @@ header {
       }
     
       &:nth-child(5) {
-        bottom: -40px;
-        right: 41%;
-    
-        img {
-          margin: -24px 0 0 -17px;
-          width: 78px;
-        }
-      }
-    
-      &:nth-child(6) {
-        bottom: 70px;
-        left: 45px;
-      }
-    
-      &:nth-child(7) {
-        bottom: 575px;
-        left: 45px;
-    
-        img {
-          width: 76px;
-        }
-      }
-    
-      &:nth-child(8) {
-        bottom: 328px;
-        left: -55px;
+        bottom: 149px;
+        right: 657px;
     
         img {
           margin: -24px 0 0 -17px;
@@ -196,7 +174,6 @@ header {
         }
       }
   }
-
   
 }
 
@@ -253,10 +230,20 @@ header {
     left: 45%;
   }
 
-  &:nth-child(even) {
-    color: #ff5e00;
-    box-shadow: 0 4px 94px #610101;
+  &:nth-child(8) {
+    bottom: 328px;
+    left: -55px;
+
+    img {
+      margin: -24px 0 0 -17px;
+      width: 78px;
+    }
   }
+
+  // &:nth-child(even) {
+  //   color: #ff5e00;
+  //   box-shadow: 0 4px 94px #610101;
+  // }
 }
 
 @keyframes snow {

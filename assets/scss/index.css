@@ -28,7 +28,7 @@ body {
     background-position: 100px 650px; } }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 110px;
   border-bottom: 1px solid #ffffff15; }
@@ -45,12 +45,18 @@ header {
 
 .banner {
   text-align: center;
-  padding-top: 65px;
+  padding-top: 20px;
   color: #fff; }
 
 .banner_text {
   max-width: 550px;
-  margin: 0 auto; }
+  margin: 0 auto 0;
+  z-index: 999;
+  position: relative;
+  top: 34vh;
+  background: #0000007d;
+  border-radius: 10px;
+  padding: 10px 10px 20px; }
   .banner_text p {
     margin: 10px 0 0 0;
     font-size: 10px;
@@ -64,9 +70,6 @@ header {
 .christmas {
   position: relative; }
 
-.christmas_img {
-  margin: 315px 0 0 -25px; }
-
 .circle {
   width: 756px;
   height: 756px;
@@ -74,7 +77,7 @@ header {
   border-radius: 50%;
   border: 1px solid #fff;
   position: absolute;
-  top: -100px;
+  top: -120px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -99,44 +102,30 @@ header {
       box-shadow: 0 4px 94px #8c0000;
       cursor: pointer; }
     .circle .icon:nth-child(1) {
-      top: -40px;
-      left: 41%; }
+      top: 68px;
+      left: 44px; }
       .circle .icon:nth-child(1) img {
         margin: -29px 0 0 -22px;
         width: 85px; }
     .circle .icon:nth-child(2) {
-      top: 70px;
-      right: 50px; }
+      top: 7px;
+      right: 125px; }
     .circle .icon:nth-child(3) {
-      top: 330px;
-      right: -50px; }
+      top: 407px;
+      right: -34px; }
       .circle .icon:nth-child(3) img {
         width: 76px; }
     .circle .icon:nth-child(4) {
-      bottom: 60px;
-      right: 60px; }
+      bottom: -42px;
+      right: 271px; }
       .circle .icon:nth-child(4) img {
         width: 88px; }
     .circle .icon:nth-child(5) {
-      bottom: -40px;
-      right: 41%; }
+      bottom: 149px;
+      right: 657px; }
       .circle .icon:nth-child(5) img {
         margin: -24px 0 0 -17px;
-        width: 79px; }
-    .circle .icon:nth-child(6) {
-      bottom: 70px;
-      left: 45px; }
-    .circle .icon:nth-child(7) {
-      bottom: 575px;
-      left: 45px; }
-      .circle .icon:nth-child(7) img {
-        width: 76px; }
-    .circle .icon:nth-child(8) {
-      bottom: 328px;
-      left: -55px; }
-      .circle .icon:nth-child(8) img {
-        margin: -24px 0 0 -17px;
-        width: 79px; }
+        width: 78px; }
 
 @keyframes circle {
   to {
@@ -175,9 +164,12 @@ header {
   .snow_flakes:nth-child(7) {
     top: 0;
     left: 45%; }
-  .snow_flakes:nth-child(even) {
-    color: #ff5e00;
-    box-shadow: 0 4px 94px #610101; }
+  .snow_flakes:nth-child(8) {
+    bottom: 328px;
+    left: -55px; }
+    .snow_flakes:nth-child(8) img {
+      margin: -24px 0 0 -17px;
+      width: 78px; }
 
 @keyframes snow {
   from {

@@ -31,12 +31,12 @@ export default [
         gcash_number: "09260917276",
         nickname: "fitz",
     },
-    // {
-    //     name: "Rommel Niebres",
-    //     position: "Backend End Developer",
-    //     video_greeting_link: "",
-    //     video_greeting_text: "",
-    //     gcash_number: "09260917276",
-    //     nickname: "rommel",
-    // },
+    {
+        name: "Rommel Niebres",
+        position: "Backend End Developer",
+        video_greeting_link: "",
+        video_greeting_text: "",
+        gcash_number: "09260917276",
+        nickname: "rommel",
+    }
 ]
