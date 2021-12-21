@@ -121,8 +121,8 @@ header {
       bottom: -40px;
       right: 41%; }
       .circle .icon:nth-child(5) img {
-        margin: -29px 0 0 -22px;
-        width: 85px; }
+        margin: -24px 0 0 -17px;
+        width: 79px; }
     .circle .icon:nth-child(6) {
       bottom: 70px;
       left: 45px; }
@@ -135,7 +135,8 @@ header {
       bottom: 328px;
       left: -55px; }
       .circle .icon:nth-child(8) img {
-        width: 88px; }
+        margin: -24px 0 0 -17px;
+        width: 79px; }
 
 @keyframes circle {
   to {

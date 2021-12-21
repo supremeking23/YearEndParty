@@ -26,6 +26,9 @@ $(document).ready(function(){
             .on("click", ".open_greetings_modal_ivan", function(){
                 $("#greetings_modal_ivan").modal("show");
             })
+            .on("click", ".open_greetings_modal_rommel", function(){
+                $("#greetings_modal_rommel").modal("show");
+            })
 
     // autoPlayBackgroundMusic();
 });
