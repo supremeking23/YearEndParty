@@ -38,8 +38,7 @@ export default [
     {
         name: "Rommel Niebres Jr.",
         position: "Backend End Developer",
-        video_greeting_link: "",
-        video_greeting_text: "",
+        video_greeting_link: "https://ik.imagekit.io/1cqtok8fv7n/rommel_greet_Kr2csW0gY.mp4?updatedAt=1640155492522",
         gcash_number: "09174781188",
         nickname: "rommel",
         img_url: "https://ik.imagekit.io/1cqtok8fv7n/rommel_enpwwdUnZ.png?updatedAt=1640087282520",

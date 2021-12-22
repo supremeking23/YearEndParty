@@ -52,7 +52,6 @@ function loadData(){
                             data-name="${employee.name}"
                             data-position="${employee.position}"
                             data-video_greeting_link="${employee.video_greeting_link}"
-                            data-video_greeting_text="${employee.video_greeting_text}"
                             data-gcash_number="${employee.gcash_number}"
                             data-gcash_qr_img="${employee.gcashqr_img}"
                             >
