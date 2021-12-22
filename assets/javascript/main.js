@@ -99,6 +99,7 @@ function closeGreetingModal(){
     video_greetings.pause();
     let play_button = $("#play_video_btn");
     background_music.play();
+    background_music.muted = false;
     video_greetings.currentTime = 0;
     // $("#qrcode").html("");
     // qrcode.clear();
