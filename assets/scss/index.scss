@@ -320,16 +320,19 @@ video{
     }
   }
 
- #gcash_details{
-   display: flex;
-   align-content: center;
-   justify-content: space-between;
-   width: 100%;
-   #gcash_logo{
-    border-radius: 10px;
+  #gcash_details{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 525px;
-  }
+    #gcash_qr_img{
+      width: 200px;
+    }
+    #gcash_logo{
+      border-radius: 10px;
+      width: 100%;
+      max-width: 554px;
+    }
  }
 }
 

@@ -225,10 +225,12 @@ video {
   align-content: center;
   justify-content: space-between;
   width: 100%; }
+  #greetings_modal #gcash_details #gcash_qr_img {
+    width: 200px; }
   #greetings_modal #gcash_details #gcash_logo {
     border-radius: 10px;
     width: 100%;
-    max-width: 525px; }
+    max-width: 554px; }
 
 input[type='range'] {
   -webkit-appearance: none;

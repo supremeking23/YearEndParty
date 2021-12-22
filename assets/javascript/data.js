@@ -6,7 +6,7 @@ export default [
         gcash_number: "09971885888",
         nickname: "kei",
         img_url: "https://ik.imagekit.io/1cqtok8fv7n/kei_wDryOhlmHz.png?updatedAt=1640087282168",
-        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/kei_qr_soSZ6vkBK.png?updatedAt=1640139760984",
+        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/qr_kei_33oQp6eg9.png?updatedAt=1640151111953",
     },
     {
         name: "Ivan Christian Jay Funcion",
@@ -15,7 +15,7 @@ export default [
         gcash_number: "09260917276",
         nickname: "ivan",
         img_url: "https://ik.imagekit.io/1cqtok8fv7n/ivan_1fwpBFS1b.png?updatedAt=1640087281652",
-        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/ivan_qr_4ORiDVJwpW.png?updatedAt=1640139761565",
+        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/qr_code_ivan_JTYw6iqsF.png?updatedAt=1640151983323",
     },
     {
         name: "Harold Nocos",
@@ -24,7 +24,7 @@ export default [
         gcash_number: "09154592146",
         nickname: "harold",
         img_url: "https://ik.imagekit.io/1cqtok8fv7n/harold_1ODzaKgvk.png?updatedAt=1640087281565",
-        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/harold_qr_MJ3MCnpHluK.png?updatedAt=1640139760984",
+        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/qr_harold__9Q33m9L1.png?updatedAt=1640151111551",
     },
     {
         name: "Fitz Gerald Villegas",
@@ -33,16 +33,16 @@ export default [
         gcash_number: "09070541821",
         nickname: "fitz",
         img_url: "https://ik.imagekit.io/1cqtok8fv7n/fitz_GA2n0JUQx.png?updatedAt=1640087281401",
-        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/fitz_qr_zcXpXdvdZAG.png?updatedAt=1640139760800",
+        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/qr_fitz_Z2Ev2Ko-V.png?updatedAt=1640151111618",
     },
     {
-        name: "Rommel Niebres",
+        name: "Rommel Niebres Jr.",
         position: "Backend End Developer",
         video_greeting_link: "",
         video_greeting_text: "",
         gcash_number: "09174781188",
         nickname: "rommel",
         img_url: "https://ik.imagekit.io/1cqtok8fv7n/rommel_enpwwdUnZ.png?updatedAt=1640087282520",
-        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/rommel_qr_DExcsSARU.png?updatedAt=1640139760736",
+        gcashqr_img: "https://ik.imagekit.io/1cqtok8fv7n/qr_rommel_ggvcyv5We.png?updatedAt=1640151112220",
     },
 ]
