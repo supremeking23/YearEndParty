@@ -36,10 +36,11 @@ $(document).ready(function(){
     loadData();
 
     $("#play_automatic").trigger("click");
+
 });
 
 function autoPlayBackgroundMusic(){
-    // background_music.play();
+    background_music.play();
 }
 
 function loadData(){
@@ -97,7 +98,7 @@ function openGreetingModal(){
 function closeGreetingModal(){
     video_greetings.pause();
     let play_button = $("#play_video_btn");
-    // background_music.play();
+    background_music.play();
     video_greetings.currentTime = 0;
     // $("#qrcode").html("");
     // qrcode.clear();
