@@ -282,21 +282,25 @@ header {
 
 // change styling here
 video{
+  background: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 300px;
+  min-height: 300px;
   width: 100%;
-  border-radius: 10px;
 }
 
 
 #greetings_modal{
   #video_controls{
+    align-items: center;
     background: #303878;
-    margin-top: -7px;
-    color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: -7px;
     padding: 10px;
     button{
       .fa-stop{
@@ -316,14 +320,17 @@ video{
     }
   }
 
-  #gcash_logo{
-    bottom: 16px;
-    display: inline-block;
-    position: absolute;
-    right: 16px;
-    width: 325px;
-    border-radius: 10px;;
+ #gcash_details{
+   display: flex;
+   align-content: center;
+   justify-content: space-between;
+   width: 100%;
+   #gcash_logo{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 525px;
   }
+ }
 }
 
 // for progress bar

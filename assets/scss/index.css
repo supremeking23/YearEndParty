@@ -193,18 +193,22 @@ header {
     transform: translateY(500%);
     opacity: .3; } }
 video {
-  width: 100%;
-  border-radius: 10px; }
+  background: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 300px;
+  min-height: 300px;
+  width: 100%; }
 
 #greetings_modal #video_controls {
+  align-items: center;
   background: #303878;
-  margin-top: -7px;
-  color: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: -7px;
   padding: 10px; }
   #greetings_modal #video_controls button .fa-stop {
     color: #dc3545; }
@@ -216,13 +220,15 @@ video {
     color: #fff;
     font-weight: bold;
     margin-left: 10px; }
-#greetings_modal #gcash_logo {
-  bottom: 16px;
-  display: inline-block;
-  position: absolute;
-  right: 16px;
-  width: 325px;
-  border-radius: 10px; }
+#greetings_modal #gcash_details {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%; }
+  #greetings_modal #gcash_details #gcash_logo {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 525px; }
 
 input[type='range'] {
   -webkit-appearance: none;

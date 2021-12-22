@@ -1,7 +1,7 @@
 import employee_data from "./data.js";
 let video_greetings = document.getElementById("video_greetings");
 let background_music = document.getElementById("background_music");
-let qrcode;
+// let qrcode;
 $(document).ready(function(){
 
     $("body")
@@ -53,6 +53,7 @@ function loadData(){
                             data-video_greeting_link="${employee.video_greeting_link}"
                             data-video_greeting_text="${employee.video_greeting_text}"
                             data-gcash_number="${employee.gcash_number}"
+                            data-gcash_qr_img="${employee.gcashqr_img}"
                             >
                                 <img src="${employee.img_url}" alt="${employee.name}">
                             </div>`;
@@ -73,16 +74,19 @@ function openGreetingModal(){
 
     greetings_modal.find("#name").text(data_details.attr("data-name"));
     greetings_modal.find("#video_greetings").attr("src", data_details.attr("data-video_greeting_link"));
+    greetings_modal.find("#gcash_qr_img").attr("src", data_details.attr("data-gcash_qr_img"));
+    greetings_modal.find("#gcash_qr_img").attr("alt", data_details.attr("data-gcash_number"));
+    greetings_modal.find("#gcash_qr_img").attr("title", data_details.attr("data-gcash_number"));
     // greetings_modal.find("#video_greeting_text").text(data_details.attr("data-video_greeting_text"));
 
-    qrcode = new QRCode("qrcode", {
-        text: data_details.attr("data-gcash_number"),
-        width: 128,
-        height: 128,
-        colorDark : "#000000",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-    });
+    // qrcode = new QRCode("qrcode", {
+    //     text: data_details.attr("data-gcash_number"),
+    //     width: 128,
+    //     height: 128,
+    //     colorDark : "#000000",
+    //     colorLight : "#ffffff",
+    //     correctLevel : QRCode.CorrectLevel.H
+    // });
 
    setTimeout(function(){
        /* set progress bar to 0 */
@@ -95,8 +99,8 @@ function closeGreetingModal(){
     let play_button = $("#play_video_btn");
     // background_music.play();
     video_greetings.currentTime = 0;
-    $("#qrcode").html("");
-    qrcode.clear();
+    // $("#qrcode").html("");
+    // qrcode.clear();
 
     play_button.find(".fa").removeClass("fa-pause").addClass("fa-play");
 }
